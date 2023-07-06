@@ -1,8 +1,8 @@
 # 1wilu
-主要修改了login.lua，newsignup.lua，nginx.conf
-Config files for my GitHub profile.
-.
-└── nginx
+#主要修改了login.lua，newsignup.lua，nginx.conf
+#Config files for my GitHub profile.
+#.
+#└── nginx
     ├── client_body_temp [error opening dir]
     ├── conf
     │   ├── fastcgi.conf
