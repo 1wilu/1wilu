@@ -1,12 +1,20 @@
-# 1wilu
-#主要修改了login.lua，newsignup.lua，nginx.conf
-#Config files for my GitHub profile.
-#.
-#└── nginx
+## 1wilu
+主要修改了login.lua，newsignup.lua，nginx.conf
+Config files for my GitHub profile.
+
+.
+
+└── nginx
+
     ├── client_body_temp [error opening dir]
+    
     ├── conf
+    
     │   ├── fastcgi.conf
+    
     │   ├── fastcgi.conf.default
+    
+    
     │   ├── fastcgi_params
     │   ├── fastcgi_params.default
     │   ├── koi-utf
@@ -33,7 +41,7 @@
     ├── modules
     │   ├── ngx_http_geoip_module.so
     │   ├── ngx_http_image_filter_module.so
-    │   └── ngx_http_xslt_filter_module.so
+     │   └── ngx_http_xslt_filter_module.so
     ├── proxy_temp [error opening dir]
     ├── sbin
     │   └── nginx
