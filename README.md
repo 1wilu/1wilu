@@ -24,6 +24,7 @@ Config files for my GitHub profile.
     │   ├── mime.types.default
     │   ├── newsignup.lua       #注册lua函数
     │   ├── nginx.conf           #nginx.conf配置文件
+    |   |---globe-config.lua    #数据库配置
     │   ├── nginx.conf.default
     │   ├── scgi_params
     │   ├── scgi_params.default
