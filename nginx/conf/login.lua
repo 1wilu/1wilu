@@ -3,20 +3,13 @@ local json = require "cjson"
 
 
 local function create_mysql_connection()
+    local mysql_config = globe_config.mysql
     local db, err = mysql:new()
     if not db then
         ngx.log(ngx.ERR, "Failed to create MySQL connection: ", err)
         return nil, err
     end
-
-    local ok, err = db:connect{                                                                                                                              
-        host = "10.0.2.15",                                                                                                                                  
-        port = 13306,                                                                                                                                        
-        database = "app",                                                                                                                                    
-        user = "root",                                                                                                                                       
-        password = "1234567",                                                                                                                                
-        charset = "utf8mb4",                                                                                                                                 
-    }   
+    local ok, err = db:connect(mysql_config)
 
     if not ok then
         ngx.say("Failed to connect to MySQL: ", err)
@@ -75,4 +68,3 @@ else
     ngx.status = ngx.HTTP_NOT_FOUND
     ngx.say("Page not found")
 end
-
